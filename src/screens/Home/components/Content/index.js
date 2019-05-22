@@ -4,7 +4,7 @@ export default class Content extends Component {
   render() {
     return (
       <div>
-        aku kontent nich
+        aku kontent nich baru kontent nyah
       </div>
     )
   }
