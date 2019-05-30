@@ -1,0 +1,12 @@
+.wrapper-wellcome{
+    padding: 50px;
+    text-align: center;
+}
+
+.wrapper-wellcome > h1 {
+    font-size: 3vw;
+}
+
+.highlight-janjian {
+    color: #FF880A;
+}

@@ -4,10 +4,9 @@ export default class Content extends Component {
   render() {
     return (
       <div>
-        <hr/>
-        
+        <br/><br/><br/><br/>
         aku kontent nich baru kontent nyah
-        <hr/>
+        <br/><br/><br/><br/>
       </div>
     )
   }
