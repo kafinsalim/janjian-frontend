@@ -1,0 +1,17 @@
+.content-right{
+    display: flex;
+    flex-direction: column;
+}
+
+.content-right > div{
+    border:  2px solid #dddddd;
+    border-radius: 3px;
+    padding: 15px;
+    background-color: #ffffff;
+}
+
+@media only screen and (max-width: 600px) {
+    .content-right {
+      display: hidden;
+    }
+}

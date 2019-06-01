@@ -1,14 +1,11 @@
 import React, { Component } from 'react'
 import {Container, Row, Col} from 'react-bootstrap'
 import Member from './components/Member'
+import Filter from './components/Filter'
 import Calendar from './components/Calendar'
 import SearchBar from './components/SearchBar'
 import JanjiJanji from './components/JanjiJanji';
-
-const borderIt = {
-  border:  '1px solid #bdbdbd',
-  borderRadius: '3px'
-};
+import './style.css'
 
 export default class Content extends Component {
   render() {
@@ -18,20 +15,8 @@ export default class Content extends Component {
             <SearchBar/>
         </Row>
         <Row>
-          <Col sm={8} style={borderIt}>
+          <Col md={12}>
             <JanjiJanji />
-          </Col>
-          <Col sm={4} style={borderIt}>
-            <Row>
-              <Col>
-                <Calendar/>
-              </Col>  
-            </Row>
-            <Row>
-              <Col>
-                <Member/>
-              </Col>
-            </Row>
           </Col>
         </Row>
         <br/><br/><br/>

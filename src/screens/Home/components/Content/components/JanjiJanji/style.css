@@ -1,4 +1,11 @@
-.wrapper-janjijanji{
-    border:  1px solid #bdbdbd;
+.wrapper-janji{
+    border:  1px solid #dddddd;
     border-radius: 3px;
+    background-color: #ffffff;
+}
+
+.item-janji{
+    padding: 15px;
+    border: 1px solid #dddddd;
+    text-align : left;
 }

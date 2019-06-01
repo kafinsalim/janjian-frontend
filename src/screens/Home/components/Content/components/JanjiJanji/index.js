@@ -3,7 +3,7 @@ import './style.css'
 
 function Janji(props){
     return(
-            <div style={{padding: "15px", border: "1px solid #bdbdbd", textAlign : "left"}}>
+            <div className="item-janji">
                 <h4>
                     {props.title}
                 </h4>
@@ -14,7 +14,7 @@ function Janji(props){
                     {props.location}
                 </h6>
             </div>
-        )
+        );
 }
 
 export class index extends Component {
@@ -25,7 +25,7 @@ export class index extends Component {
 
     render() {
         return (
-            <div>
+            <div className="wrapper-janji">
                 <Janji
                     title="Diskusi Framework Javascript 2018"
                     content="ya mari kita diskusi framework yang tidack akan pernah selesai"
