@@ -4,7 +4,7 @@ export default class Calendar extends Component {
     render() {
         return (
             <div>
-                Calendar Nich
+                Calendar box
             </div>
         )
     }

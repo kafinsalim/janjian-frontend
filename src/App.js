@@ -1,27 +1,28 @@
-import React, { Component } from 'react';
+import React from 'react';
 import Home from './screens/Home';
-// import Explore from './screens/Explore';
-// import Notification from './screens/Notification';
 import NewEvent from './screens/NewEvent';
-// import Login from './screens/Login';
+import Swapi from './screens/Swapi';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
-
-import logo from './logo.svg';
+import store from './store';
+import { Provider } from 'react-redux';
+// import logo from './logo.svg';
 import './App.css';
 
 function App() {
   return (
-    // <Home />
+    <Provider store={store}>
       <Router>
         <div className='App'>
           <Switch>
             <Route exact path='/' component={Home} />
             <Route path='/newevent' component={NewEvent} />
+            <Route path='/swapi' component={Swapi} />
             {/* <Route path='/login' component={Login} /> */}
             {/* <Route component={FourOFour} /> */}
           </Switch>
         </div>
       </Router>
+    </Provider>
   );
 }
 

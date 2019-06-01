@@ -8,7 +8,6 @@ export class index extends Component {
                 <h1>
                     Lets Collaborate Ideas with <span className="highlight-janjian">Janjian</span>
                 </h1>
-                <hr/>
             </div>
         )
     }

@@ -1,0 +1,13 @@
+.wrapper-searchbar{
+    background-color: #0F1721;
+    border-radius: 10px;
+    padding: 10px 0.5%;
+    width: 100%;
+    margin: -34px auto 20px auto !important;
+}
+
+@media only screen and (max-width: 600px) {
+    .wrapper-searchbar{
+        border-radius: 0px;
+    }
+  }

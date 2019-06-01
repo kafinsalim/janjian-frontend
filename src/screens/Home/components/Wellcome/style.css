@@ -1,6 +1,8 @@
 .wrapper-wellcome{
-    padding: 50px;
+    padding: 40px 25px 60px 25px;
     text-align: center;
+    background-color: #00455D;
+    color: white;
 }
 
 .wrapper-wellcome > h1 {
