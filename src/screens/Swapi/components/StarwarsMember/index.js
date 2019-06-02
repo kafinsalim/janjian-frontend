@@ -43,7 +43,7 @@ class StarwarsMember extends Component {
                     })
                     : (
                     <tr>
-                        <td colSpan="5">'No Data'</td>
+                        <td colSpan="5">Loading...</td>
                     </tr>
                 )
                 }
