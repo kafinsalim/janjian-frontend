@@ -1,16 +1,23 @@
 .wrapper-header{
     border-bottom: 1px solid #bdbdbd;
     background-color: #ffffff;
+    padding: 8px 4%;
 }
 
 .logo-janjian-header {
-    width: 120px;
-    margin-right: 20px;
-    padding-bottom: 10px;
+    width: 45px;
 }
 
 .header-button {
     align-items: center;
     padding: auto 20px auto 20px;
     text-align: center;
+}
+
+.text-janjian {
+    color: #FF880A;
+    font-family: 'Bitter', serif;
+    margin-left: 5px;
+    font-size: 25px;
+    vertical-align: middle;
 }

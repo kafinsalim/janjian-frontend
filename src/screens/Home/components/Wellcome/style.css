@@ -7,9 +7,13 @@
 
 .wrapper-wellcome > h1 {
     font-family: 'Bitter', serif;
-    font-size: 4vw;
+    font-size: 3.5rem;
 }
 
 .highlight-janjian {
     color: #FF880A;
+}
+
+.detail-janjian{
+    font-size: 1.5rem;
 }

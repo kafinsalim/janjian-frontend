@@ -6,8 +6,9 @@ export class index extends Component {
         return (
             <div className="wrapper-wellcome">
                 <h1>
-                    Lets Collaborate Ideas with <span className="highlight-janjian">Janjian</span>
+                    <span className="highlight-janjian">Janjian</span>
                 </h1>
+                <span className="detail-janjian"> a place to collaborate ideas.</span>
             </div>
         )
     }
