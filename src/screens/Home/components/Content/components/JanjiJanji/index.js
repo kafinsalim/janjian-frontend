@@ -1,46 +1,61 @@
-import React, { Component } from 'react'
-import './style.css'
+import React, { Component } from "react";
+import "./style.css";
 
-function Janji(props){
-    return(
-            <div className="item-janji">
-                <h4>
-                    {props.title}
-                </h4>
-                <p>
-                    {props.content}
-                </p>
-                <h6 style={{textAlign: "right", color: 'grey'}}>
-                    {props.location}
-                </h6>
-            </div>
-        );
+function Janji(props) {
+  return (
+    <div className="item-janji" key={props.index}>
+      <h3>{props.janji.judul}</h3>
+      <p>{props.janji.konten}</p>
+      <div style={{ display: "flex", justifyContent: "space-between" }}>
+        <b>{props.janji.waktu}</b>
+        <i>{props.janji.lokasi}</i>
+      </div>
+    </div>
+  );
 }
 
 export class index extends Component {
-    constructor(props) {
-        super(props);
-        
-    }
+  constructor(props) {
+    super(props);
+    this.state = {
+      listJanji: [
+        {
+          judul: "Workshop Framework React",
+          konten: "build react from scratch",
+          waktu: "Senin, 19 Juni 2019",
+          lokasi: "Jakarta, Campus Hacktiv8"
+        },
+        {
+          judul: "Workshop Framework Vue",
+          konten: "build Vue from scratch",
+          waktu: "Rabu, 23 Juni 2019",
+          lokasi: "Jakarta, Telkom Landmark Tower"
+        },
+        {
+          judul: "Workshop Framework Ember",
+          konten: "build Ember from scratch",
+          waktu: "Minggu, 27 Juni 2019",
+          lokasi: "Bandung, Campus Hacktiv8"
+        },
+        {
+          judul: "Workshop Framework Angular",
+          konten: "build Angular from scratch",
+          waktu: "Selasa, 29 Juni 2019",
+          lokasi: "Singapore, Campus Hacktiv8"
+        }
+      ]
+    };
+  }
 
-    render() {
-        return (
-            <div className="wrapper-janji">
-                <Janji
-                    title="Diskusi Framework Javascript 2018"
-                    content="ya mari kita diskusi framework yang tidack akan pernah selesai"
-                    location="Jakarta, Campus Hacktiv8" />
-                <Janji
-                    title="Diskusi Framework Javascript 2019"
-                    content="ya ya mari kita diskusi framework yang tidack akan pernah selesai"
-                    location="Jakarta, Campus Hacktiv8 2" />
-                <Janji
-                    title="Diskusi Framework Javascript 2020"
-                    content="ya ya ya mari kita diskusi framework yang tidack akan pernah selesai"
-                    location="Jakarta, Campus Hacktiv8 3" />
-            </div>
-        )
-    }
+  render() {
+    return (
+      <div className="wrapper-janji">
+        {this.state.listJanji.map((data, index) => {
+          return <Janji index={index} janji={data} />;
+        })}
+      </div>
+    );
+  }
 }
 
-export default index
+export default index;
